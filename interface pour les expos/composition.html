@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Composition des équipes</title>
+    <link rel="stylesheet" type="text/css" href="composition.css">
+    <link rel="stylesheet" type="text/css" href="standard.css">
+    <link rel="stylesheet" type="text/css" href="devoir2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Barre de navigation -->
+
+    <header>
+        <nav>
+            <ul class="nav_liens">
+                <li>
+                    <a href="accueil.html"><img class="logo" src="logo.4.png" alt="logo"></a>
+                </li>
+                <li><a href="accueil.html" class="item">ACCUEIL</a></li>
+                <li><a href="classement.html" class="item">CLASSEMENT</a></li>
+                <li><a href="composition.html" class="item">ÉQUIPES</a></li>
+                <li><a href="evolution.html" class="item">ÉVOLUTION</a></li>
+                <li><a href="auteurs.html" class="item">AUTEURS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bannière -->
+
+    <div class="contenant">
+        <div class="classement">
+            <h1 class="classementTitre">LISTE DES JOUEURS</h1>
+        </div>
+
+        <div id="offensive">
+            <fieldset>
+                <legend>Attributs des tableax</legend>
+            
+                <div class="btn-group">
+                  <select id="annee" name="annee">
+                    <option value="1969" id="se1">1969</option>
+                    <option value="1970" id="se2">1970</option>
+                    <option value="1971" id="se3">1971</option>
+                    <option value="1972" id="se4">1972</option>
+                    <option value="1973" id="se5">1973</option>
+                    <option value="1974" id="se6">1974</option>
+                    <option value="1975" id="se7">1975</option>
+                    <option value="1976" id="se8">1976</option>
+                    <option value="1977" id="se9">1977</option>
+                    <option value="1978" id="se10">1978</option>
+                    <option value="1979" id="se11">1979</option>
+                    <option value="1980" id="se12">1980</option>
+                    <option value="1981" id="se13">1981</option>
+                    <option value="1982" id="se14">1982</option>
+                    <option value="1983" id="se15">1983</option>
+                    <option value="1984" id="se16">1984</option>
+                    <option value="1985" id="se17">1985</option>
+                    <option value="1986" id="se18">1986</option>
+                    <option value="1987" id="se19">1987</option>
+                    <option value="1988" id="se20">1988</option>
+                    <option value="1989" id="se21">1989</option>
+                    <option value="1990" id="se22">1990</option>
+                    <option value="1991" id="se23">1991</option>
+                    <option value="1992" id="se24">1992</option>
+                    <option value="1993" id="se25">1993</option>
+                    <option value="1994" id="se26">1994</option>
+                    <option value="1995" id="se27">1995</option>
+                    <option value="1996" id="se28">1996</option>
+                    <option value="1997" id="se29">1997</option>
+                    <option value="1998" id="se30">1998</option>
+                    <option value="1999" id="se31">1999</option>
+                    <option value="2000" id="se32">2000</option>
+                    <option value="2001" id="se33">2001</option>
+                    <option value="2002" id="se34">2002</option>
+                    <option value="2003" id="se35">2003</option>
+                    <option value="2004" id="se36">2004</option>
+                  </select>
+                </div>
+                
+                <div class="btn-group"> 
+                <input type="checkbox" class="d" id="d5"/>
+                <label for="d5" class="l">Joueurs de champ</label>
+                <input type="checkbox" class="d" id="d6"/>
+                <label for="d6" class="l">Lanceurs</label>
+                <input type="checkbox" class="d" id="d1"/>
+                <label for="d1" class="l">Gérant</label>
+                <input type="checkbox" class="d" id="d2"/>
+                <label for="d2" class="l">Propriétaire</label>
+                <input type="checkbox" class="d" id="d3"/>
+                <label for="d3" class="l">Assistance</label>
+                <input type="checkbox" class="d" id="d4"/>
+                <label for="d4" class="l">Masse salariale</label>
+                </div>
+                
+                </fieldset>
+
+        <fieldset >
+            <legend>Offensive</legend>
+            <input type="checkbox" id="off1" class="do"/>
+            <label for="off1" class="l">BA%</label>
+            <input type="checkbox" id="off2" class="do"/>
+            <label for="off2" class="l"> SL% </label>
+            <input type="checkbox" id="off3" class="do"/>
+            <label for="off3" class="l">OB%</label>
+            <input type="checkbox" id="off4" class="do"/>
+            <label for="off4" class="l">SO%</label>
+            <input type="checkbox" id="off5" class="do"/>
+            <label for="off5" class="l">SB%</label>
+            <input type="checkbox" id="off6" class="do"/>
+            <label for="off6" class="l">AB</label>
+            <input type="checkbox" id="off7" class="do"/>
+            <label for="off7" class="l">H</label>
+            <input type="checkbox" id="off8" class="do"/>
+            <label for="off8" class="l" >1B</label>
+            <input type="checkbox" id="off9" class="do"/>
+            <label for="off9" class="l">2B</label>
+            <input type="checkbox" id="off10" class="do"/>
+            <label for="off10" class="l">3B</label>
+            <input type="checkbox" id="off11" class="do"/>
+            <label for="off11" class="l">HR</label>
+            <input type="checkbox" id="off12" class="do"/>
+            <label for="off12" class="l">BB</label>
+            <input type="checkbox" id="off13" class="do"/>
+            <label for="off13" class="l">R</label>
+            <input type="checkbox" id="off14" class="do"/>
+            <label for="off14" class="l">SB</label>
+            <input type="checkbox" id="off15" class="do"/>
+            <label for="off15" class="l">CS</label>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Défensive</legend>
+            <input type="checkbox" id="def1" class="dd"/>
+            <label for="def1" class="l">FP%</label>
+            <input type="checkbox" id="def2" class="dd"/>
+            <label for="def2" class="l"> POS </label>
+            <input type="checkbox" id="def3" class="dd"/>
+            <label for="def3" class="l"> A </label>
+            <input type="checkbox" id="def4" class="dd"/>
+            <label for="def4"  class="l">E</label>
+            <input type="checkbox" id="def5" class="dd"/>
+            <label for="def5"  class="l">Salaire</label>
+            </fieldset>
+            
+            
+            <div class="btn-group">
+            <input type="checkbox" id="demo5"/>
+            <label for="demo5" class="s">Soumettre</label>
+            </div>
+
+
+            <fieldset id="groupe-1">
+                <legend> Option de trie </legend>
+                <label for="JoueurDePosition" class="l2">Tableau des joueurs de position</label> 
+                <select id="JoueurDePosition" name="JoueurDePosition">
+                    <option value="BA%" id="t1">BA%</option>
+                    <option value="SL%" id="t2">SL%</option>
+                    <option value="OB%" id="t3">OB%</option>
+                    <option value="FP%" id="t4">FP%</option>
+                    <option value="HR" id="t5">HR</option>
+                    <option value="salaire" id="t6">salaire</option>
+                </select>
+
+                <label for="lanceur" class="l2">Tableau des lanceurs</label>
+                <select id="lanceur" name="lanceur">
+                    <option value="ERA" id="t7"> ERA </option>
+                    <option value="BOApp" id="t8">BOApp</option>
+                    <option value="G" id="t9">G</option>
+                    <option value="GS" id="t10">GS</option>
+                    <option value="CG" id="t11">CG</option>
+                    <option value="W" id="t12">W</option>
+                    <option value="SO" id="t13"> SO </option>
+                    <option value="H" id="t14">H</option>
+                    <option value="BB" id="t15">BB</option>
+                    <option value="Salaire" id="t16">Salaire</option>
+                </select>
+                
+                </fieldset>
+                
+                <div class="btn-group">
+                <input type="checkbox" id="trie" class="d"/>
+                <label for="trie" class="s">Trier</label>
+                </div>
+
+                <div class="groupe">
+
+                    <label id="gerant">Gérant: Joe</label>
+                    <label id="proprio">Propriétaire: Molson</label>
+                    <label id="masse">Masse salariale: 1B$</label>
+                    <label id="assis">Assistance: 1M personnes</label>
+
+                </div>  
+
+                </div>
+
+        <!-- Premier tableau -->
+
+        <div>
+            <table id="a">
+                <caption>Joueurs de position</caption>
+                <tr>
+                    <th>NOM</th>
+                    <th>#</th>
+                    <th>
+                        <div class="bulle">H<span class="bulletexte">Nombre de coups surs</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">2B<span class="bulletexte">Nombre de doubles</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">3B<span class="bulletexte">Nombre de triples</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">HR<span class="bulletexte">Nombre de coups de circuit</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">RBI<span class="bulletexte">Points produits</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">BB<span class="bulletexte">Buts sur balles</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">AVG<span class="bulletexte">Moyenne de coup sur</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">OBP<span class="bulletexte">Moyenne de présence sur les buts</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">SLG<span class="bulletexte">Pourcentage de puissance</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">OPS<span class="bulletexte">Présence sur les buts plus puissance</span></div>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">76</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche">000</td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">12</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">21</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">99</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">78</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">65</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">87</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">09</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">65</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">41</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">55</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">66</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">77</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">88</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">99</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">01</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">02</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">05</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">06</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">44</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">47</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">71</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">72</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">73</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">74</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">75</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">76</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">78</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- Deuxième tableau -->
+
+
+        <div>
+            <table id="b">
+                <caption id="cRouge">Lanceurs</caption>
+                <tr>
+                    <th>NOM</th>
+                    <th>#</th>
+                    <th>
+                        <div class="bulle">W <span class="bulletexte">Nombre de victoires</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">L<span class="bulletexte">Nombre de défaites</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">G<span class="bulletexte">Nombre de parties jouées</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">IP<span class="bulletexte">Nombre de manches lancées</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">ERA<span class="bulletexte">Moyenne de points alloués</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">ER<span class="bulletexte">Nombre de points alloués</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">BB<span class="bulletexte">Moyenne de buts sur balles alloués</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">SO<span class="bulletexte">Nombre de retraits au baton</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">AVG<span class="bulletexte">Moyenne de coups sur contre</span></div>
+                    </th>
+                    <th>
+                        <div class="bulle">WHIP<span class="bulletexte">Moyenne de buts sur balles et coup sur par
+                                manche lancée</span></div>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">99</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">98</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">97</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">96</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">95</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">94</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">93</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">92</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">90</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">67</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">65</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">51</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">52</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">53</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">54</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">55</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">56</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">67</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">89</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">38</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">34</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">32</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">48</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">37</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">76</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">63</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">65</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">23</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="long"></td>
+                    <td class="fondBleu">21</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                    <td class="bord-gauche"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+
+            <div class="footerMain">
+                <div class="social-icons">
+
+                    <ul>
+
+                        <li><a href="https://www.facebook.com/mlb/" target="blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/mlb" target="blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/mlb/?hl=fr-ca" target="blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/MLB" target="blank"><i class="fa fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-menu">
+
+                    <ul>
+                        <li><a class="adj" href="accueil.html">ACCUEIL</a></li>
+                        <li><a class="adj" href="classement.html">CLASSEMENT</a></li>
+                        <li><a class="adj" href="composition.html">ÉQUIPES</a></li>
+                        <li><a class="adj" href="evolution.html">ÉVOLUTION</a></li>
+                        <li><a class="adj" href="auteurs.html">AUTEURS</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <p> Design by: Montreal Expos&trade; </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

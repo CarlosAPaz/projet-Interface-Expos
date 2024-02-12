@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sintony:700&display=swap');
+
+/*Élément pour la barre de navigation*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    display: block;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background-color: #EE4949;
+    position: static;
+    top: 0;
+}
+
+
+
+.nav_liens{
+    list-style: none;
+}
+
+.nav_liens li{
+    display: inline-block;
+    padding: 90px;
+}
+
+.logo{
+    position: absolute;
+    cursor:pointer;
+    height: 100px;
+    width: 100px;
+    left: 10px;
+    top: -20px;
+}
+
+.nav_liens li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_liens li a:hover{
+    color: #005F9D;
+    background: #edf0f1;
+}
+
+.item{
+    padding-top: 50px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    top: -30px;
+    border-radius: 15px;
+    font-family: "Sintony",sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color:#edf0f1;
+    text-decoration: none;
+}   
+
+.adj{
+    text-decoration: none;
+}
+
+
+/* Éléments pour les bannières utilisées dans les pages Classement et Équipe*/
+    
+.contenant{
+    position: relative;
+    top:30px;
+}
+.classement{
+    background-color: #EFEFEF;
+    width: 94%;
+    height: 100%;
+    margin-left: 3%;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+
+.classementTitre{
+    font-family: "Odibee Sans",sans-serif;
+    font-size: 50px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color:#005F9D;
+    text-align: center;
+    
+}
+
+    /* contenant de la bulle d'information */
+  
+    .bulle {
+        position: relative;
+        display: inline-block;
+    
+      }
+    
+      /* texte de la bulle d'information visible */
+    
+      .bulle .bulletexte {
+        visibility: hidden;
+        width: 120px;
+        background-color: #D3D3D3;
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+        font-size: 12px;
+        font-family: "Sintony",sans-serif;
+        /* position de la bulle d'information */
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        
+      }
+    
+      /* rendre la bulle d'information visible */
+      .bulle:hover .bulletexte {
+        visibility: visible;
+      }
+
+
+      .footerMain{
+          width: 100%;
+          height: auto;
+          margin:auto;
+          background: #272727;
+          padding-top: 2%;
+          
+      }
+
+      .social-icons {
+          width: 100%;
+          height: auto;
+          margin:auto;
+      }
+
+      .social-icons ul {
+        margin: 0px;
+        padding:0px;
+        text-align: center;
+      }
+
+      .social-icons ul li {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          margin: 0px 10px;
+          border-radius:100%;
+          background: #EE4949;
+      }
+
+      .social-icons ul li a {
+        color: #edf0f1;
+        font-size: 25px;
+        display: block;
+        padding-top: 25%;
+      }
+
+      .social-icons ul li a i {
+        height: 50px;
+      }
+
+      .social-icons ul li:hover{
+          background:#005F9D;
+      }
+      .social-icons ul li:hover a{
+        background:#005F9D;
+        border-radius: 100%;
+       
+    } 
+
+      .footer-menu{
+          width: 100%;
+          height: auto;
+          margin: auto;
+          letter-spacing: 1px;
+          padding: 25px;
+      }
+
+      .footer-menu ul {
+          margin:0px;
+          padding:0px;
+          text-align:center;
+      }
+
+      .footer-menu ul li{
+          display: inline-block;
+          margin: 0px 20px;
+      }
+
+      .footer-menu ul li a {
+        font-family: "Sintony",sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color:#edf0f1;
+        
+      }
+
+      .footer-bottom {
+          width: 100%;
+          height: auto;
+          margin:auto;
+          background: #005F9D;
+          padding:5px;
+      }
+      .footer-bottom p{
+          font-family: "Sintony",sans-serif;
+          font-size: 14px;
+          text-align: center;
+          color:#edf0f1;
+          font-weight: 600;
+          letter-spacing: 1px;
+      }
+
+
+      footer {
+          position: absolute;
+          top:101%;
+          width: 100%;
+      }

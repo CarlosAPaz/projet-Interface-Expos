@@ -1,0 +1,714 @@
+﻿<!DOCTYPE html>
+<html lang="fr-ca">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Classement des équipes</title>
+  <link rel="stylesheet" type="text/css" href="CLASSEMENT.CSS">
+  <link rel="stylesheet" type="text/css" href="standard.css">
+  <link rel="stylesheet" type="text/css" href="devoir2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+  <!-- Barre de navigation -->
+
+
+  <header>
+    <nav>
+      <ul class="nav_liens">
+        <li>
+          <a href="accueil.html"><img class="logo" src="logo.4.png" alt="logo"></a>
+        </li>
+        <li><a href="accueil.html" class="item">ACCUEIL</a></li>
+        <li><a href="classement.html" class="item">CLASSEMENT</a></li>
+        <li><a href="composition.html" class="item">ÉQUIPES</a></li>
+        <li><a href="evolution.html" class="item">ÉVOLUTION</a></li>
+        <li><a href="auteurs.html" class="item">AUTEURS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <fieldset class="f">
+    <legend>Classement</legend>
+    <div class="group">
+    
+    <div class="btn-group">
+      <select id="annee" name="annee">
+        <option value="1969" id="s1">1969</option>
+        <option value="1970" id="s2">1970</option>
+        <option value="1971" id="s3">1971</option>
+        <option value="1972" id="s4">1972</option>
+      <option value="1973" id="s5">1973</option>
+        <option value="1974" id="s6">1974</option>
+        <option value="1975" id="s7">1975</option>
+        <option value="1976" id="s8">1976</option>
+        <option value="1977" id="s9">1977</option>
+        <option value="1978" id="s10">1978</option>
+        <option value="1979" id="s11">1979</option>
+        <option value="1980" id="s12">1980</option>
+      <option value="1981" id="s13">1981</option>
+        <option value="1982" id="s14">1982</option>
+        <option value="1983" id="s15">1983</option>
+        <option value="1984" id="s16">1984</option>
+        <option value="1985" id="s17">1985</option>
+        <option value="1986" id="s18">1986</option>
+        <option value="1987" id="s19">1987</option>
+        <option value="1988" id="s20">1988</option>
+      <option value="1989" id="s21">1989</option>
+        <option value="1990" id="s22">1990</option>
+        <option value="1991" id="s23">1991</option>
+        <option value="1992" id="s24">1992</option>
+        <option value="1993" id="s25">1993</option>
+        <option value="1994" id="s26">1994</option>
+        <option value="1995" id="s27">1995</option>
+        <option value="1996" id="s28">1996</option>
+      <option value="1997" id="s29">1997</option>
+        <option value="1998" id="s30">1998</option>
+        <option value="1999" id="s31">1999</option>
+        <option value="2000" id="s32">2000</option>
+      <option value="2001" id="s33">2001</option>
+        <option value="2002" id="s34">2002</option>
+        <option value="2003" id="s35">2003</option>
+        <option value="2004" id="s36">2004</option>
+      </select>
+    </div>
+      
+    <div class="btn-group"> 
+    <input type="radio" name="tableau" value="Nationale" id="demo1"/>
+    <label for="demo1" class="l1">Nationale</label>
+    <input type="radio" name="tableau" value="Nationale&Americaine" id="demo2"/>
+    <label for="demo2" class="l1">Nationale & Américaine</label>
+    </div>
+    <div class="btn-group">
+    <input type="checkbox" id="demo3"/>
+    <label for="demo3" class="l1">Champion de la ligue</label>
+    <input type="checkbox" id="demo4"/>
+    <label for="demo4" class="l1">Champion de la série mondiale</label>
+    </div>
+    
+    
+    <div class="btn-group">
+    <input type="checkbox" id="SClassement" class="d"/>
+    <label for="SClassement" class="s">Soumettre</label>
+    </div>
+    
+    </div>
+    
+    </fieldset>
+
+  <!-- Bannière -->
+
+  <div class="contenant">
+    <div class="classement">
+      <h1 class="classementTitre">CLASSEMENT</h1>
+    </div>
+    <img src="american.png" class="images" alt="american">
+
+    <!-- Premier tableau -->
+
+    <table id="c">
+      <tr>
+        <th>
+          <div class="bulle">Américaine <span class="bulletexte">Ligue Américaine</span></div>
+        </th>
+        <th>
+          <div class="bulle">V <span class="bulletexte">Victoire</span></div>
+        </th>
+        <th>
+          <div class="bulle">D <span class="bulletexte">Défaite</span></div>
+        </th>
+        <th class="section">
+          <div class="bulle">V% <span class="bulletexte">Pourcentage de victoire</span></div>
+        </th>
+        <th>
+          <div class="bulle">Écart <span class="bulletexte">Écart</span></div>
+        </th>
+        <th>
+          <div class="bulle">Domicile <span class="bulletexte">À domicile</span></div>
+        </th>
+        <th>
+          <div class="bulle">Étranger <span class="bulletexte">À l'étranger</span></div>
+        </th>
+        <th class="section">
+          <div class="bulle">>.500 <span class="bulletexte">Dossier contre les équipes >.500</span></div>
+        </th>
+        <th>
+          <div class="bulle">PM <span class="bulletexte">Points marqués</span></div>
+        </th>
+        <th>
+          <div class="bulle">PA <span class="bulletexte">Points alloués</span></div>
+        </th>
+        <th class="section">
+          <div class="bulle">DIFF <span class="bulletexte">Différentiel</span></div>
+        </th>
+        <th>
+          <div class="bulle">10D <span class="bulletexte">Les 10 dernières</span></div>
+        </th>
+        <th>
+          <div class="bulle">SÉQ <span class="bulletexte">Séquence</span></div>
+        </th>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="nyy.png" alt="NYY">>NYY</td>
+        <td>10</td>
+        <td>10</td>
+        <td class="section">10</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+        <td class="section">10</td>
+        <td>10</td>
+        <td>10</td>
+        <td class="section">10</td>
+        <td>10</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="laa.png" alt="LAA">LAA</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="bos.png" alt="bos">BOS</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="tex.png" alt="TEX">TEX</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="min.png" alt="MIN">MIN</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="det.png" alt="DET">DET</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="sea.png" alt="SEA">SEA</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="tb.png" alt="TB">TB</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="cws.png" alt="CWS">CWS</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="oak.png" alt="OAK">OAK</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="tor.png" alt="TOR">TOR</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="cle.png" alt="CLE">CLE</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="kc.png" alt="KC">KC</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="bal.png" alt="BAL">BAL</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-americaine"><img src="min.png" alt="MIN">MIN</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <!-- Bannière -->
+
+    <div class="classement">
+      <h1 class="classementTitre">CLASSEMENT</h1>
+    </div>
+
+    <img src="national.png" class="images" alt="national">
+
+    <!-- Deuxième tableau -->
+
+    <table id="d">
+      <tr>
+        <th>
+          <div class="bulle">Nationale <span class="bulletexte">Ligue Nationale</span></div>
+        </th>
+        <th>
+          <div class="bulle">V <span class="bulletexte">victoire</span></div>
+        </th>
+        <th>
+          <div class="bulle">D <span class="bulletexte">Défaite</span></div>
+        </th>
+        <th>
+          <div class="bulle">V% <span class="bulletexte">Pourcentage de victoire</span></div>
+        </th>
+        <th>
+          <div class="bulle">Écart <span class="bulletexte">Écart</span></div>
+        </th>
+        <th>
+          <div class="bulle">Domicile <span class="bulletexte">À domicile</span></div>
+        </th>
+        <th>
+          <div class="bulle">Étranger <span class="bulletexte">À l'étranger</span></div>
+        </th>
+        <th>
+          <div class="bulle">>.500 <span class="bulletexte">Dossier contre les équipes >.500</span></div>
+        </th>
+        <th>
+          <div class="bulle">PM <span class="bulletexte">Points marqués</span></div>
+        </th>
+        <th>
+          <div class="bulle">PA <span class="bulletexte">Points alloués</span></div>
+        </th>
+        <th>
+          <div class="bulle">DIFF <span class="bulletexte">Différentiel</span></div>
+        </th>
+        <th>
+          <div class="bulle">10D <span class="bulletexte">Les 10 dernières</span></div>
+        </th>
+        <th>
+          <div class="bulle">SÉQ <span class="bulletexte">Séquence</span></div>
+        </th>
+
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="lad.png" alt="LAD">LAD</td>
+        <td>10</td>
+        <td>10</td>
+        <td class="section">10</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+        <td class="section">10</td>
+        <td>10</td>
+        <td>10</td>
+        <td class="section">10</td>
+        <td>10</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="phi.png" alt="PHI">PHI</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="col.png" alt="col">COL</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="stl.png" alt="stl">stl</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="sf.png" alt="sf">SF</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="was.png" alt="WAS">WAS</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="atl.png" alt="ATL">atl</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="chc.png" alt="CHC">CHC</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="mil.png" alt="MIL">MIL</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="cin.png" alt="CIN">CIN</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="sd.png" alt="SD">SD</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="hou.png" alt="hou">HOU</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="ari.png" alt="ARI">ARI</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="nym.png" alt="NYM">NYM</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="e-nationale"><img src="pit.png" alt="PIT">PIT</td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+        <td class="section"></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <!-- Légende -->
+
+    <div id="legende">
+      <p>Légende</p>
+    </div>
+
+    <p id="legendetexte">z &nbsp; &nbsp; &nbsp; &nbsp; Champion de division<br>
+      x &nbsp; &nbsp; &nbsp; &nbsp; Participation aux séries éliminatoires<br>
+      é &nbsp; &nbsp; &nbsp; &nbsp; Éliminé des séries éliminatoires</p>
+
+    <footer>
+
+      <div class="footerMain">
+        <div class="social-icons">
+
+          <ul>
+
+            <li><a href="https://www.facebook.com/mlb/" target="blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/mlb" target="blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/mlb/?hl=fr-ca" target="blank"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/user/MLB" target="blank"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
+
+
+        <div class="footer-menu">
+
+          <ul>
+            <li><a class="adj" href="accueil.html">ACCUEIL</a></li>
+            <li><a class="adj" href="classement.html">CLASSEMENT</a></li>
+            <li><a class="adj" href="composition.html">ÉQUIPES</a></li>
+            <li><a class="adj" href="evolution.html">ÉVOLUTION</a></li>
+            <li><a class="adj" href="auteurs.html">AUTEURS</a></li>
+          </ul>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p> Design by: Montreal Expos&trade; </p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+
+
+</body>
+
+</html>

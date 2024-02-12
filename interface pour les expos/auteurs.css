@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sintony:700&display=swap');
+
+/* Les trois boites */
+
+#auteur1{
+    background-color: #EFEFEF;
+    width: 27%;
+    height: 80%;
+    position: absolute;
+    left: 5%;
+    top: 12%; 
+    margin: 0px;
+}
+
+#auteur2{
+    background-color: #EFEFEF;
+    width: 25%;
+    height: 80%;
+    position: absolute;
+    left: 37%;
+    top: 12%; 
+    margin: 0px;
+}
+#auteur3{
+    background-color: #EFEFEF;
+    width: 25%;
+    height: 80%;
+    position: absolute;
+    left: 67%;
+    top: 12%; 
+    margin: 0px;
+}
+
+/* placement du nom dans la boite*/
+
+.auteur{
+    color: #005F9D;
+    position: relative;
+    top: 40%;
+    text-align:  center;
+    font-family: "Odibee Sans", sans-serif;
+    font-size: 50px;
+    
+}
+
+/* placement du matricule dans la boite*/
+
+.matricule{
+    
+    color: #005F9D;
+    position: relative;
+    top: 42%;
+    text-align:  center;
+    font-family: "Sintony", sans-serif;
+    font-size: 20px;
+}

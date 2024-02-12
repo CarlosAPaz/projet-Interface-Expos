@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sintony:700&display=swap');
+    
+
+
+
+    body{
+      font-family: "Odibee Sans",sans-serif;
+    } 
+
+    /* pour la creation des tableaux*/
+  
+    table {
+      width:96%;
+      margin-left: 2%;
+      background-color: #F7F7F7;
+    }
+    table, th, td {
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 1px;
+      border-bottom: 1px solid #ddd;
+      font-family: "Sintony",sans-serif;
+      
+    }
+
+    /*Pour creer la subdivision (verticale) a l'interieure des tableaux*/
+
+    .section {
+      border-right: 1px solid #ddd;
+    }
+  
+    table tr:hover {background-color: #808080;}
+
+    /*Spécification du premier tableau*/
+
+    #c{
+      margin-bottom: 40px;
+      text-align: center;
+      color:#D50032;
+    }
+  
+    #c th {
+      background-color: #EE4949;
+      color: white;
+      text-align: center;
+
+    }
+      
+        /* caractéristique des cellules données de la premiere rangée  */    
+    .e-americaine{
+      background-color:#e6f2ff;
+      color:#D50032;
+      font-weight:bold;
+      text-align: left;
+    }
+
+    /*Spécification du deuxième tableau  */
+
+    #d{
+      color:#002D72;
+      text-align: center;
+
+    }
+  
+    #d th {
+      background-color: #005f9d;
+      color: white;
+      text-align: center;
+    }
+        /* caractéristique des cellules données de la premiere rangée  */
+    .e-nationale{ 
+      background-color:#e6f2ff;
+      color:#002D72;
+      font-weight:bold;
+      text-align: left;
+      
+    }
+  
+  
+  
+  
+  
+    /* Pour creer le contenu de la legende */
+  
+    #legende{
+
+      text-align: center;
+      border-bottom: 1px solid #808080;
+      border-top: 1px solid #808080;
+      padding:1px;
+      margin-left: 2%;
+      margin-top: 1%;
+      margin-right: 2%;
+      color:#595959;
+    }
+  
+    #legendetexte{
+      color:#595959;
+      line-height: 2em;
+      margin-left: 2%;
+
+    }
+
+    .images{
+      position: relative;
+      bottom: 90px;
+      left:45px;
+    }

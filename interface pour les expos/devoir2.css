@@ -1,0 +1,323 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+* { box-sizing: border-box; }
+
+select{
+	
+	background: linear-gradient(#FFFAFA, #808080);
+	border: 1px solid #C0C0C0;
+	color: #005f9d;
+	height: 100%;
+	padding: 1px 5px;
+	
+}
+
+#offensive{
+  margin-top:20px;
+}
+
+.f{
+	border-bottom:none;
+	border-right:none;
+  border-left:none;
+  margin-top:40px;
+}
+
+.d{
+	display:none;
+}
+
+.do{
+	display:none;
+}
+
+.dd{
+	
+	display:none;
+}
+
+.l{
+	margin-right:5px;
+	background: linear-gradient(#FFFAFA, #808080);
+}
+
+.l1{
+  background: linear-gradient(#FFFAFA, #808080);
+}
+
+.l2{
+  background: linear-gradient(#FFFAFA, #808080);
+  float:left;
+}
+
+.btn-group{
+	
+  display:inline-block;
+  margin-top:5px;
+}
+
+#groupe-1{
+  margin-top: 10px;
+}
+
+div {
+	
+	margin-left:5px;
+  
+}
+
+
+#annee{
+	
+height:5%;
+
+}
+
+#demo1{
+	display:none;
+}
+
+#demo2{
+	display:none;
+}
+
+#demo3{
+	display:none;
+}
+
+#demo4{
+	display:none;
+}
+
+#demo5{
+	display:none;
+}
+
+label {
+
+  margin-top:20px;
+  margin: 2px;	
+  background-color: #C0C0C0; 
+  border: 1px solid #C0C0C0;
+  color: #005f9d;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+
+}
+
+/*pour le bouton soumettre*/
+.s{
+  padding: 5px 10px;
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #005f9d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.s:hover {background-color: #002D72}
+
+/*pour donner l'impression d'appuyer sur le bouton*/
+
+.s:active {
+  background-color: #002D72;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+.do:checked + label {
+    background: #005f9d;
+	border: 1px solid #002D72;
+    color: white;
+}
+
+.dd:checked + label {
+    background: #EE4949;
+	border: 1px solid #D50032;
+    color: white;
+}
+
+
+#demo1:checked + label {
+
+  background: #005f9d;
+	border: 1px solid #002D72;
+    color: white;
+
+}
+
+#demo2:checked + label {
+  background: linear-gradient(#005f9d, #EE4949);
+	border: 1px solid #002D72;
+  color: white;
+}
+
+#demo3:checked + label {
+    
+	background: #e6f2ff;
+	border: 1px solid #C0C0C0;
+    color: #EE4949;
+}
+
+#demo4:checked + label {
+    
+	background: #e6f2ff;
+  border: 1px solid #C0C0C0;
+  color: #005f9d;
+}
+
+#d1:checked + label {
+	background: #e6f2ff;
+	border: 1px solid #C0C0C0;
+    color: #EE4949;
+
+}
+
+#d2:checked + label {
+	background: #e6f2ff;
+	border: 1px solid #C0C0C0;
+    color: #005f9d;
+
+}
+
+#d3:checked + label {
+    
+	background: #e6f2ff;
+	border: 1px solid #C0C0C0;
+    color: #EE4949;
+
+}
+
+#d4:checked + label {
+    
+	background: #e6f2ff;
+	border: 1px solid #C0C0C0;
+    color: #005f9d;
+}
+
+#d5:checked + label {
+    
+  background: #EE4949;
+	border: 1px solid #D50032;
+  color: white;
+}
+
+#d6:checked + label {
+    
+  background: #005f9d;
+	border: 1px solid #002D72;
+  color: white;
+}
+
+.tabs {
+  position: relative;
+  clear: both;
+}
+.tab {
+  float: left;
+  position: relative;
+}
+.tab label {
+  background: linear-gradient(#FFFAFA, #808080);
+  padding: 10px 30px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.tab label i {
+  font-style: normal;
+  font-size: 10px;
+  color: #aaa;
+  position: absolute;
+  right: 18px;
+  top: 12px;
+}
+.tab [type="radio"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin: 0;
+  z-index: 1;
+}
+.content {
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  left: 0;
+  background: #333;
+  color: white;
+  padding: 20px;
+}
+
+[type="radio"]:checked ~ label {
+  z-index: 2;
+}
+[type="radio"]:checked ~ label ~ .content {
+  z-index: 1;
+  opacity: 1;
+}
+
+.close-tab {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.close-tab label {
+  background: #C0C0C0;
+  color: white;
+}
+[type="radio"]:checked ~ label ~ .close-tab {
+  z-index: 3;
+}
+
+input{
+	float:left;
+}
+
+#gerant{
+
+  margin-top:15px;
+  margin-left:35%;
+  border: 1px solid #005f9d;
+
+}
+#proprio{
+
+  margin-top:15px;
+  border: 1px solid #005f9d;
+
+}
+#masse{
+
+  margin-top:15px;
+  border: 1px solid #005f9d;
+  
+}
+#assis{
+
+  margin-top:15px;
+  border: 1px solid #005f9d;
+
+}
+
+#JoueurDePosition{
+  float:left;
+}
+
+#lanceur{
+  float:left;
+}

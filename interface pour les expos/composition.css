@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sintony:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Stardos+Stencil&display=swap');
+
+body{
+    font-family: "Odibee Sans",sans-serif;
+} 
+
+/*--------------Tableaux----------------*/
+
+table, td, tr {
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+th, td{
+    height: 17px;
+    border-bottom: 1px solid #DDDDDD;
+    text-align: center;
+    padding: 2px;
+}
+
+td{
+    font-family: "Stardos Stencil";
+}
+
+th {
+    background-color: #EE4949;
+    color: white;
+}
+
+table {
+    width: 96%;
+    margin: 2%;
+}
+
+table tr:hover {background-color: #808080;}
+
+/* pour allonger la première rangée*/
+
+.long {
+    width: 200px;
+    background-color: #f2f2f2;
+}
+
+/*Pour creer les subdivision(verticale) a l'intérieure*/
+
+.bord-gauche {
+    border-left: 1px solid #DDDDDD;
+}
+
+
+/* Spécification du premier tableaux*/
+
+#a th{
+    background-color: #EE4949;
+}
+
+#a td{
+    color:#D50032;
+}
+
+/* Spécification du premier tableaux*/
+
+#b td{
+    color:#002D72;
+}
+
+#b th{
+    background-color: #005f9d;
+}
+
+.fondBleu{
+    background-color: #e6f2ff;
+}
+
+/* les prioprités de caption pour le premier et deuxième tableau en ordre*/
+
+caption {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Odibee Sans", sans-serif;
+    color:#005f9d;
+    text-shadow: 2px 2px 4px #EE4949;
+}
+
+#cRouge{
+    color:#EE4949;
+    text-shadow: 2px 2px 4px #005f9d;
+
+}
